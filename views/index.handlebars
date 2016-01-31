@@ -1,5 +1,31 @@
 <h1>Example App: Home</h1>
 
-<p>
-    Lorem
-</p>
+<div> 
+
+    <form class = "login-form" action ="/user/login">
+        <lable for = "fl_name">Name</lable>
+        <input name = "fl_name" type ="text"><br>
+        <lable for = "email">Email</lable>
+        <input name = "email" type ="text"><br>
+        <lable for = "password">Password</lable>
+        <input name = "password" type ="text"><br>
+        <input type = "submit">
+        
+    </form>
+
+    
+</div>
+
+<div><hr></div>
+
+<div>
+    <form action="/user/register" method="post" class="signup-form" style="display: block;">
+      <input name="fl_name" type="text" class="text-input" placeholder="first &amp; last name">
+      <input name="email" type="email" class="text-input" placeholder="email">
+      <input name="password" type="password" class="text-input" placeholder="password">
+      <input name="password_confirmation" type="password" class="text-input" placeholder="password confirmation">
+      <div>
+        <button class="blue sign-up-submit">Sign Up</button>
+      </div>
+    </form>
+</div>
