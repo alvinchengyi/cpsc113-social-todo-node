@@ -3,17 +3,27 @@
 
 <div>
     We currently have {{userCount}} users.
-    
+    {{#if currentUser}}
+        Your name is <b>{{currentUser.name}}</b>\
+        {{/if}}
 </div>
+
+{{#if errors}}
+<div style = "color:red">
+    {{errors}}
+</div>
+
+{{/if}}
+
 <div> 
 
     <form class = "login-form" action ="/user/login">
-        <lable for = "fl_name">Name</lable>
+        <label for = "fl_name">Name</label>
         <input name = "fl_name" type ="text"><br>
-        <lable for = "email">Email</lable>
+        <label for = "email">Email</label>
         <input name = "email" type ="text"><br>
-        <lable for = "password">Password</lable>
-        <input name = "password" type ="text"><br>
+        <label for = "password">Password</label>
+        <input name = "password" type="text"><br>
         <input type = "submit">
         
     </form>
